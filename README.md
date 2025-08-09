@@ -34,7 +34,8 @@ The goal is to provide an automated tool to assist medical professionals in diag
 
   ---
   
-Model Details
+## Model Details
+
 Architecture: ResNet18 pretrained on ImageNet.
 Input layer: Modified first convolutional layer to accept 1-channel grayscale images.
 Output layer: Adjusted for 4-class classification.
@@ -43,36 +44,42 @@ Loss function: CrossEntropyLoss.
 Optimizer: Adam.
 
 ---
-Data Augmentation
+## Data Augmentation
+
 Typical augmentations applied:
 Random rotations (±10 degrees)
 Random horizontal flips
 
 ----
 
-Results
+## Results
+
 Achieved promising accuracy on validation set (insert your metrics here).
 Effective differentiation between cysts, stones, tumors, and normal kidney images.
 
 ---
 
-Future Work
+## Future Work
+
 Integrate clinical tabular data with imaging for multimodal learning.
 Use dataset-specific normalization for improved performance.
 Explore deeper architectures and hyperparameter tuning.
 Deploy as a web app using Streamlit or similar frameworks.
+
 ---
 
-Dependencies
+## Dependencies
+
 Python 3.7+
 PyTorch
 torchvision
 numpy
 matplotlib
 Pillow (PIL)
+
 ---
 
-##Project Structure
+## Project Structure
 .
 ├── dataset/               # CT scan images (class-wise folders)
 ├── models/                # Model definitions and saved weights
